@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('file:///C:/Users/Sridhar/Desktop/1234.webp'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Change text color for visibility */
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.5); /* Slight transparency for readability */
+        }
+
+        .hero {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for features */
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #19f0d7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to VS</h1>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Your Amazing Product</h1>
+        <p>Discover the features and benefits of our amazing product.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h2>Feature One</h2>
+        <p>Brief description of feature one. It's awesome!</p>
+    </div>
+    <div class="feature">
+        <h2>Feature Two</h2>
+        <p>Brief description of feature two. It's fantastic!</p>
+    </div>
+    <div class="feature">
+        <h2>Feature Three</h2>
+        <p>Brief description of feature three. You'll love it!</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 VS. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        alert('Thank you for your message! We will get back to you soon.');
+        this.reset(); // Reset the form
+    });
+</script>
+
+</body>
+</html>
